@@ -14,10 +14,13 @@
     "strictNullChecks": true
   },
   "include": [
-    "src/**/*",
-    "__tests__/**/*"
+    "src/**/*.ts"
+  ],
+  "typeRoots": [
+    "node_modules/@types"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "src/**/*.spec.ts"
   ]
 }
