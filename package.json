@@ -1,5 +1,5 @@
 {
-  "name": "blox-reporter",
+  "name": "simple-node-typescript-starter",
   "version": "1.0.0",
   "description": "Blox pdf Rerport Generator",
   "main": "index.js",
@@ -20,7 +20,7 @@
     "test:debug": "node --debug-brk --inspect ./node_modules/jest/bin/jest.js --runInBand",
     "precommit": "lint-staged"
   },
-  "homepage": "https://www.blox.co.il",
+  "homepage": "www.pavel-kaminsky.com",
   "dependencies": {
     "chalk": "^2.3.0",
     "ejs": "^2.5.7",
