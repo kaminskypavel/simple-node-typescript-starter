@@ -1,0 +1,72 @@
+{
+  "name": "blox-reporter",
+  "version": "1.0.0",
+  "description": "Blox pdf Rerport Generator",
+  "main": "index.js",
+  "author": "Pavel 'PK' Kaminsky <kaminsky.pavel@gmail.com> (http://www.pavel-kaminsky.com)",
+  "license": "ISC",
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 8.9.0"
+  },
+  "scripts": {
+    "dev": "nodemon --exec npm run start",
+    "start": "ts-node src/index.ts",
+    "lint": "tslint --project .",
+    "lint:fix": "yarn run lint --fix",
+    "test": "yarn lint && jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:debug": "node --debug-brk --inspect ./node_modules/jest/bin/jest.js --runInBand",
+    "precommit": "lint-staged"
+  },
+  "homepage": "https://www.blox.co.il",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "ejs": "^2.5.7",
+    "jest-cli": "^22.1.4",
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.20.1",
+    "node-fetch": "^1.7.3",
+    "numeral": "^2.0.6",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/ejs": "^2.5.0",
+    "@types/jest": "^22.0.1",
+    "@types/lodash": "^4.14.92",
+    "@types/mkdirp": "^0.5.2",
+    "@types/node": "~8.0.49",
+    "@types/node-fetch": "^1.6.7",
+    "@types/numeral": "^0.0.22",
+    "jest": "~21.2.1",
+    "lint-staged": "^6.0.1",
+    "nodemon": "^1.14.7",
+    "tslint": "^5.9.1",
+    "tslint-microsoft-contrib": "^5.0.2"
+  },
+  "jest": {
+    "roots": [
+      "src"
+    ],
+    "setupFiles": [
+      "<rootDir>/jest-setup.ts"
+    ],
+    "transform": {
+      "^.+\\.ts$": "<rootDir>/jest-typescript.js"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|js)$"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "tslint --fix",
+      "git add"
+    ]
+  }
+}
