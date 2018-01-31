@@ -62,13 +62,7 @@
       "js",
       "ts"
     ],
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|js)$",
-    "lint-staged": {
-      "*.ts": [
-        "lint:fix",
-        "git add"
-      ]
-    }
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|js)$"
   },
   "lint-staged": {
     "*.ts": [
