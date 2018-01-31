@@ -1,7 +1,7 @@
 {
   "name": "simple-node-typescript-starter",
   "version": "1.0.0",
-  "description": "Blox pdf Rerport Generator",
+  "description": "a typescript boilerplate based on best practices and tricks 🦄",
   "main": "index.js",
   "author": "Pavel 'PK' Kaminsky <kaminsky.pavel@gmail.com> (http://www.pavel-kaminsky.com)",
   "license": "ISC",
