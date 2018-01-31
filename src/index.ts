@@ -1,5 +1,5 @@
 import {IMyType} from "./@types";
-import {debug} from "./commons";
+import {log} from "./commons";
 
 export function generatePanda(): IMyType {
     return {
@@ -11,5 +11,5 @@ export function generatePanda(): IMyType {
 
 (async () => {
     const panda = generatePanda();
-    debug(panda);
+    log(panda);
 })();
