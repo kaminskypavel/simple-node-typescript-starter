@@ -11,8 +11,8 @@
     "member-ordering": false,
     "no-trailing-whitespace": false,
     "eofline": false,
-		"indent": [true, "tabs"],
-		"no-unused-variable": [
+    "indent": false,
+    "no-unused-variable": [
       true
     ],
     "max-line-length": [
