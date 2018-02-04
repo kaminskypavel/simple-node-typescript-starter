@@ -10,15 +10,24 @@
     "one-variable-per-declaration": false,
     "member-ordering": false,
     "no-trailing-whitespace": false,
-    "no-unused-variable": [
+    "eofline": false,
+		"indent": [true, "tabs"],
+		"no-unused-variable": [
       true
     ],
     "max-line-length": [
       200
     ],
+    "one-line": false,
     "object-literal-sort-keys": false,
     "no-console": false,
     "trailing-comma": false
   },
-  "rulesDirectory": []
+  "rulesDirectory": [],
+  "linterOptions": {
+    "exclude": [
+      "src/**/*.spec.{ts,tsx}",
+      "./jest-setup.ts"
+    ]
+  }
 }
