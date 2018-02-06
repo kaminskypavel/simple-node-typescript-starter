@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/kaminskypavel/simple-node-typescript-starter/tree/master.svg?style=svg)](https://circleci.com/gh/kaminskypavel/simple-node-typescript-starter/tree/master)
+
 # Simple Node TypeScript Starter  
 
 ## Powered By
