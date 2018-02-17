@@ -1,9 +1,11 @@
 {
   "name": "simple-node-typescript-starter",
   "version": "1.0.0",
-  "description": "a typescript boilerplate based on best practices and tricks 🦄",
+  "description":
+    "a typescript boilerplate based on best practices and tricks 🦄",
   "main": "index.js",
-  "author": "Pavel 'PK' Kaminsky <kaminsky.pavel@gmail.com> (http://www.pavel-kaminsky.com)",
+  "author":
+    "Pavel 'PK' Kaminsky <kaminsky.pavel@gmail.com> (http://www.pavel-kaminsky.com)",
   "license": "ISC",
   "engineStrict": true,
   "engines": {
@@ -13,11 +15,11 @@
     "dev": "nodemon --exec npm run start",
     "start": "ts-node src/index.ts",
     "lint": "tslint --project .",
-    "lint:fix": "yarn run lint --fix",
     "test": "yarn lint && jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:debug": "node --debug-brk --inspect ./node_modules/jest/bin/jest.js --runInBand",
+    "test:debug":
+      "node --debug-brk --inspect ./node_modules/jest/bin/jest.js --runInBand",
     "precommit": "lint-staged"
   },
   "homepage": "www.pavel-kaminsky.com",
@@ -49,28 +51,20 @@
     "lint-staged": "^6.1.0",
     "nodemon": "^1.14.7",
     "ts-node": "^4.1.0",
-    "tslint": "^5.9.1"
+    "tslint": "^5.9.1",
+    "prettier": "^1.10.2"
   },
   "jest": {
-    "roots": [
-      "src"
-    ],
-    "setupFiles": [
-      "<rootDir>/jest-setup.ts"
-    ],
+    "roots": ["src"],
+    "setupFiles": ["<rootDir>/jest-setup.ts"],
     "transform": {
       "^.+\\.ts$": "<rootDir>/jest-typescript.js"
     },
-    "moduleFileExtensions": [
-      "js",
-      "ts"
-    ],
+    "moduleFileExtensions": ["js", "ts"],
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|js)$"
   },
   "lint-staged": {
-    "*.ts": [
-      "yarn lint:fix",
-      "git add"
-    ]
+    "*.{js,json}": ["prettier --write", "git add"],
+    "*.ts": ["prettier --write", "tslint --fix", "git add"]
   }
 }
