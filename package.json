@@ -1,11 +1,9 @@
 {
   "name": "simple-node-typescript-starter",
   "version": "1.0.0",
-  "description":
-    "a typescript boilerplate based on best practices and tricks 🦄",
+  "description": "a typescript boilerplate based on best practices and tricks 🦄",
   "main": "index.js",
-  "author":
-    "Pavel 'PK' Kaminsky <kaminsky.pavel@gmail.com> (http://www.pavel-kaminsky.com)",
+  "author": "Pavel 'PK' Kaminsky <kaminsky.pavel@gmail.com> (http://www.pavel-kaminsky.com)",
   "license": "ISC",
   "engineStrict": true,
   "engines": {
@@ -18,8 +16,7 @@
     "test": "yarn lint && jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:debug":
-      "node --debug-brk --inspect ./node_modules/jest/bin/jest.js --runInBand",
+    "test:debug": "node --debug-brk --inspect ./node_modules/jest/bin/jest.js --runInBand",
     "precommit": "lint-staged"
   },
   "homepage": "www.pavel-kaminsky.com",
@@ -27,7 +24,7 @@
     "chalk": "^2.3.0",
     "ejs": "^2.5.7",
     "es6-promise": "^4.2.4",
-    "husky": "^0.14.3",
+    "husky": "^0.15.0-rc.8",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.4",
     "mkdirp": "^0.5.1",
@@ -50,21 +47,40 @@
     "jest-cli": "^22.1.4",
     "lint-staged": "^6.1.0",
     "nodemon": "^1.14.7",
+    "prettier": "^1.10.2",
     "ts-node": "^4.1.0",
-    "tslint": "^5.9.1",
-    "prettier": "^1.10.2"
+    "tslint": "^5.9.1"
   },
   "jest": {
-    "roots": ["src"],
-    "setupFiles": ["<rootDir>/jest-setup.ts"],
+    "roots": [
+      "src"
+    ],
+    "setupFiles": [
+      "<rootDir>/jest-setup.ts"
+    ],
     "transform": {
       "^.+\\.ts$": "<rootDir>/jest-typescript.js"
     },
-    "moduleFileExtensions": ["js", "ts"],
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|js)$"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "*.{js,json}": ["prettier --write", "git add"],
-    "*.ts": ["prettier --write", "tslint --fix", "git add"]
+    "src/**/*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ],
+    "src/**/*.ts": [
+      "prettier --parser typescript --write",
+      "tslint --fix",
+      "git add"
+    ]
   }
 }
