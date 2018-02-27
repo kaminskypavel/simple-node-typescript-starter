@@ -48,24 +48,23 @@
     "lint-staged": "^6.1.0",
     "nodemon": "^1.14.7",
     "prettier": "^1.10.2",
+    "ts-jest": "^22.4.0",
     "ts-node": "^4.1.0",
     "tslint": "^5.9.1"
   },
   "jest": {
-    "roots": [
-      "src"
-    ],
-    "setupFiles": [
-      "<rootDir>/jest-setup.ts"
-    ],
     "transform": {
-      "^.+\\.ts$": "<rootDir>/jest-typescript.js"
+      "^.+\\.tsx?$": "ts-jest"
     },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
     "moduleFileExtensions": [
+      "ts",
+      "tsx",
       "js",
-      "ts"
-    ],
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|js)$"
+      "jsx",
+      "json",
+      "node"
+    ]
   },
   "husky": {
     "hooks": {
