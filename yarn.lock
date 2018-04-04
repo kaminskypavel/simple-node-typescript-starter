@@ -1601,7 +1601,7 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-husky@^0.15.0-rc.8:
+husky@^0.15.0-rc.13:
   version "0.15.0-rc.13"
   resolved "https://registry.yarnpkg.com/husky/-/husky-0.15.0-rc.13.tgz#a27550b7b51d2f472e284b48fc9257a6d6b3f681"
   dependencies:
