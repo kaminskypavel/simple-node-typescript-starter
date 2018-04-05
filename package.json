@@ -10,6 +10,7 @@
     "node": ">= 8.9.0"
   },
   "scripts": {
+    "build": "tsc",
     "dev": "nodemon --exec npm run start",
     "start": "ts-node src/index.ts",
     "lint": "tslint --project .",
@@ -17,7 +18,8 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:debug": "node --debug-brk --inspect ./node_modules/jest/bin/jest.js --runInBand",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "prepush": "npm run build"
   },
   "homepage": "www.pavel-kaminsky.com",
   "dependencies": {
