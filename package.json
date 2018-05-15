@@ -26,7 +26,7 @@
     "chalk": "^2.3.0",
     "ejs": "^2.5.7",
     "es6-promise": "^4.2.4",
-    "husky": "^0.15.0-rc.13",
+    "husky": "^1.0.0-rc.6",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.4",
     "mkdirp": "^0.5.1",
