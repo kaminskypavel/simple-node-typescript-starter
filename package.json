@@ -13,6 +13,7 @@
     "build": "tsc",
     "dev": "nodemon --exec npm run start",
     "start": "ts-node src/index.ts",
+    "format": "prettier --write src/**/*.{json,ts}",
     "lint": "tslint --project .",
     "test": "yarn lint && jest",
     "test:watch": "jest --watch",
@@ -70,7 +71,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn format && yarn test && yarn build"
     }
   },
   "lint-staged": {

@@ -2,6 +2,6 @@
 // All Rights Reserved.
 
 export interface IMyType {
-    name: string;
-    type: string;
+	name: string;
+	type: string;
 }
