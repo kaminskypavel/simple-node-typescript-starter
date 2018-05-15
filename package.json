@@ -27,7 +27,6 @@
     "chalk": "^2.4.1",
     "ejs": "^2.6.1",
     "es6-promise": "^4.2.4",
-    "hoek": "5",
     "husky": "^1.0.0-rc.6",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.10",
