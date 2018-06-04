@@ -11,8 +11,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon --exec npm run start",
-    "start": "ts-node src/index.ts",
+    "start": "ts-node-dev src/index.ts",
     "format": "prettier --write src/**/*.{json,ts}",
     "lint": "tslint --project .",
     "test": "yarn lint && jest",
@@ -49,10 +48,9 @@
     "jest": "~22.4.3",
     "jest-cli": "^22.1.4",
     "lint-staged": "^7.1.0",
-    "nodemon": "^1.17.4",
     "prettier": "^1.12.1",
     "ts-jest": "^22.4.6",
-    "ts-node": "^6.0.3",
+    "ts-node-dev": "^1.0.0-pre.25",
     "tslint": "^5.10.0"
   },
   "jest": {
