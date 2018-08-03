@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "noUnusedLocals": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "module": "commonjs",
     "declaration": true,
     "experimentalDecorators": true,

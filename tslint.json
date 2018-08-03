@@ -12,9 +12,6 @@
     "no-trailing-whitespace": false,
     "eofline": false,
     "indent": false,
-    "no-unused-variable": [
-      true
-    ],
     "max-line-length": [
       200
     ],
