@@ -14,7 +14,8 @@
     "start": "ts-node-dev src/index.ts",
     "format": "prettier --write src/**/*.{json,ts}",
     "lint": "tslint --project .",
-    "test": "yarn lint && jest",
+    "jscpd ": "jscpd",
+    "test": "yarn lint && yarn jscpd && jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:debug": "node --debug-brk --inspect ./node_modules/jest/bin/jest.js --runInBand",
@@ -48,6 +49,7 @@
     "fetch-mock": "^6.4.2",
     "jest": "^23.4.2",
     "jest-cli": "^23.4.2",
+    "jscpd": "^0.6.22",
     "lint-staged": "^7.2.0",
     "prettier": "^1.14.0",
     "ts-jest": "^23.1.1",
@@ -71,7 +73,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn format && yarn test && yarn build"
+      "pre-push": "yarn format && yarn jscpd && yarn test && yarn build"
     }
   },
   "lint-staged": {
