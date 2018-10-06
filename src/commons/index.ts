@@ -2,7 +2,6 @@
 // All Rights Reserved.
 
 // tslint:disable:no-var-requires
-require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
 import chalk, {Chalk} from 'chalk';
