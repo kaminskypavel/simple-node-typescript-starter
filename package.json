@@ -61,6 +61,9 @@
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
+    "watchPathIgnorePatterns": [
+      "/node_modules/"
+    ],
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
     "moduleFileExtensions": [
       "ts",
@@ -87,5 +90,12 @@
       "tslint --fix",
       "git add"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaminskypavel/simple-node-typescript-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaminskypavel/simple-node-typescript-starter/issues"
   }
 }
