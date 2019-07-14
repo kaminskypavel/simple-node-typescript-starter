@@ -29,7 +29,7 @@
     "ejs": "^2.6.1",
     "husky": "^1.0.0-rc.13",
     "isomorphic-fetch": "^2.2.1",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.13",
     "mkdirp": "^0.5.1",
     "moment": "^2.22.2",
     "numeral": "^2.0.6",
