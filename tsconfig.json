@@ -1,26 +1,22 @@
 {
   "compilerOptions": {
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "module": "commonjs",
     "declaration": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "moduleResolution": "node",
+    "declarationMap": false,
+    "sourceMap": false,
+    "resolveJsonModule": true,
+    "module": "commonjs",
+    "lib": [
+      "es2015",
+      "esnext",
+      "dom"
+    ],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "target": "es6",
-    "outDir": "dist",
-    "sourceMap": true,
-    "noImplicitThis": true,
     "noImplicitAny": true,
-    "alwaysStrict": true,
-    "strictNullChecks": true
+    "moduleResolution": "node",
+    "outDir": "dist",
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "typeRoots": [
-    "node_modules/@types"
-  ],
   "exclude": [
     "node_modules",
     "src/**/*.spec.ts"
