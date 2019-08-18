@@ -5,8 +5,9 @@
 require('isomorphic-fetch');
 
 import chalk, {Chalk} from 'chalk';
-import * as moment from 'moment';
+import moment from 'moment';
 
+// @ts-ignore
 process.env = process.env || 'development';
 
 export const isDevelopment = (): boolean => {

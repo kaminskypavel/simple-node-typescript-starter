@@ -1,101 +1,91 @@
 {
-  "name": "simple-node-typescript-starter",
-  "version": "1.0.0",
-  "description": "a typescript boilerplate based on best practices and tricks 🦄",
-  "main": "index.js",
-  "author": "Pavel 'PK' Kaminsky <kaminsky.pavel@gmail.com> (http://www.pavel-kaminsky.com)",
-  "license": "ISC",
-  "engineStrict": true,
-  "engines": {
-    "node": ">= 8.9.0"
-  },
-  "scripts": {
-    "build": "tsc",
-    "start": "ts-node-dev src/index.ts",
-    "format": "prettier --write src/**/*.{json,ts}",
-    "lint": "tslint --project .",
-    "checkCodeDups": "jscpd",
-    "checkLicenses": "jsgl --local .",
-    "test": "yarn lint && yarn checkCodeDups && jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "test:debug": "node --debug-brk --inspect ./node_modules/jest/bin/jest.js --runInBand",
-    "precommit": "lint-staged",
-    "prepush": "npm run build"
-  },
-  "homepage": "www.pavel-kaminsky.com",
-  "dependencies": {
-    "chalk": "^2.4.1",
-    "ejs": "^2.6.1",
-    "husky": "^1.0.0-rc.13",
-    "isomorphic-fetch": "^2.2.1",
-    "lodash": "^4.17.13",
-    "mkdirp": "^0.5.1",
-    "moment": "^2.22.2",
-    "numeral": "^2.0.6"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.0.0-beta.55",
-    "@types/ejs": "^2.5.1",
-    "@types/fetch-mock": "^6.0.1",
-    "@types/isomorphic-fetch": "^0.0.34",
-    "@types/jest": "^23.3.1",
-    "@types/lodash": "^4.14.116",
-    "@types/mkdirp": "^0.5.2",
-    "@types/node": "^10.5.5",
-    "@types/node-fetch": "^1.6.9",
-    "@types/numeral": "^0.0.22",
-    "fetch-mock": "^6.4.2",
-    "jest": "^23.4.2",
-    "jest-cli": "^23.4.2",
-    "js-green-licenses": "^0.5.0",
-    "jscpd": "^0.6.22",
-    "lint-staged": "^7.2.0",
-    "prettier": "^1.14.0",
-    "ts-jest": "^23.1.1",
-    "ts-node-dev": "^1.0.0-pre.26",
-    "tslint": "^5.11.0",
-    "typescript": "^3.5.3"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
+    "name": "simple-node-typescript-starter",
+    "version": "1.0.0",
+    "description": "a typescript boilerplate based on best practices and tricks 🦄",
+    "main": "index.js",
+    "author": "Pavel 'PK' Kaminsky <kaminsky.pavel@gmail.com> (http://www.pavel-kaminsky.com)",
+    "license": "ISC",
+    "engineStrict": true,
+    "engines": {
+        "node": ">= 8.9.0"
     },
-    "watchPathIgnorePatterns": [
-      "/node_modules/"
-    ],
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn format && yarn jscpd && yarn test && yarn build"
+    "scripts": {
+        "build": "tsc",
+        "start": "ts-node-dev src/index.ts",
+        "format": "prettier --write src/**/*.{json,ts}",
+        "lint": "npm run lint:eslint && npm run lint:prettier",
+        "lint:eslint": "eslint src/**/*.ts --fix",
+        "lint:prettier": "prettier --config .prettierrc --write src/**/*.{ts,js,json}",
+        "checkCodeDups": "jscpd",
+        "checkLicenses": "jsgl --local .",
+        "test": "yarn lint && yarn checkCodeDups && jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
+        "test:debug": "node --debug-brk --inspect ./node_modules/jest/bin/jest.js --runInBand",
+        "precommit": "lint-staged",
+        "prepush": "npm run build"
+    },
+    "homepage": "www.pavel-kaminsky.com",
+    "dependencies": {
+        "chalk": "^2.4.1",
+        "ejs": "^2.6.1",
+        "husky": "^1.0.0-rc.13",
+        "isomorphic-fetch": "^2.2.1",
+        "lodash": "^4.17.13",
+        "mkdirp": "^0.5.1",
+        "moment": "^2.22.2",
+        "numeral": "^2.0.6"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^1.13.0",
+        "@typescript-eslint/parser": "^1.13.0",
+        "cross-env": "^5.2.0",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.1",
+        "eslint-config-prettier": "^5.1.0",
+        "eslint-plugin-css-modules": "^2.11.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-jest": "^22.13.6",
+        "eslint-plugin-json": "^1.4.0",
+        "eslint-plugin-prettier": "^3.1.0",
+        "husky": "^3.0.1",
+        "jest": "^24.8.0",
+        "jscpd": "^2.0.15",
+        "lint-staged": "^9.2.0",
+        "prettier": "^1.18.2",
+        "setup-polly-jest": "^0.5.2",
+        "ts-jest": "^24.0.2",
+        "ts-node-dev": "^1.0.0-pre.26",
+        "typescript": "^3.5.3"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.tsx?$": "ts-jest"
+        },
+        "watchPathIgnorePatterns": [
+            "/node_modules/"
+        ],
+        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "pre-push": "npm run format && npm run jscpd && npm test && npm run build"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kaminskypavel/simple-node-typescript-starter.git"
+    },
+    "bugs": {
+        "url": "https://github.com/kaminskypavel/simple-node-typescript-starter/issues"
     }
-  },
-  "lint-staged": {
-    "src/**/*.{js,json}": [
-      "prettier --write",
-      "git add"
-    ],
-    "src/**/*.ts": [
-      "prettier --parser typescript --write",
-      "tslint --fix",
-      "git add"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kaminskypavel/simple-node-typescript-starter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kaminskypavel/simple-node-typescript-starter/issues"
-  }
 }
