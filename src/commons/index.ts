@@ -1,9 +1,6 @@
 // Built With ♡ 'PK' (www.pavel-kaminsky.com)
 // All Rights Reserved.
 
-// tslint:disable:no-var-requires
-require('isomorphic-fetch');
-
 import chalk, {Chalk} from 'chalk';
 import moment from 'moment';
 
