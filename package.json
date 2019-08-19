@@ -2,7 +2,7 @@
     "name": "simple-node-typescript-starter",
     "version": "1.0.0",
     "description": "a typescript boilerplate based on best practices and tricks 🦄",
-    "main": "index.js",
+    "main": "dist/server.js",
     "author": "Pavel 'PK' Kaminsky <kaminsky.pavel@gmail.com> (http://www.pavel-kaminsky.com)",
     "license": "ISC",
     "engineStrict": true,
@@ -11,7 +11,7 @@
     },
     "scripts": {
         "build": "tsc",
-        "start": "ts-node-dev src/index.ts",
+        "start": "ts-node-dev src/server.ts",
         "format": "prettier --write src/**/*.{json,ts}",
         "lint": "npm run lint:eslint && npm run lint:prettier",
         "lint:eslint": "eslint src/**/*.ts --fix",
