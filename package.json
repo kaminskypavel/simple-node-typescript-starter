@@ -18,7 +18,7 @@
         "lint:prettier": "prettier --config .prettierrc --write src/**/*.{ts,js,json}",
         "jscpd": "jscpd",
         "checkLicenses": "jsgl --local .",
-        "test": "jest",
+        "test": "jest --passWithNoTests",
         "test:watch": "jest --watch",
         "test:coverage": "jest --coverage",
         "test:debug": "node --debug-brk --inspect ./node_modules/jest/bin/jest.js --runInBand",
