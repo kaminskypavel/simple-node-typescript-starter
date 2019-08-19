@@ -1,7 +1,9 @@
 import winston, {format} from 'winston';
 import {isDevelopment, isProduction} from './env';
 
-const simpleFormat = format.printf((info) => `[${new Date().toISOString()}] ${info.level}: ${info.message}`);
+const simpleFormat = format.printf(
+	info => `[${new Date().toISOString()}] ${info.level}: ${info.message}`
+);
 
 const jsonFormat = format.combine(
 	format.timestamp({
