@@ -1,12 +1,13 @@
-import winston from 'winston';
-import {isProduction} from './env';
+import winston, {format} from 'winston';
+import {isDevelopment, isProduction} from './env';
 
-const simpleFormat = winston.format.printf((info) => `[${new Date().toISOString()}] ${info.level}: ${info.message}`);
-const jsonFormat = winston.format.combine(
-	winston.format.timestamp({
+const simpleFormat = format.printf((info) => `[${new Date().toISOString()}] ${info.level}: ${info.message}`);
+
+const jsonFormat = format.combine(
+	format.timestamp({
 		format: 'YYYY-MM-DD HH:mm:ss'
 	}),
-	winston.format.json()
+	format.json()
 );
 
 const logger = winston.createLogger({
@@ -21,10 +22,10 @@ const logger = winston.createLogger({
 	]
 });
 
-if (!isProduction()) {
+if (!isDevelopment()) {
 	logger.add(
 		new winston.transports.Console({
-			format: simpleFormat
+			format: format.combine(format.colorize(), simpleFormat)
 		})
 	);
 }
