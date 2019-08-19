@@ -17,3 +17,11 @@ export const isTest = (): boolean => {
 export const isProduction = (): boolean => {
 	return process.env.NODE_ENV === 'production';
 };
+
+export const isEnableMonitoring = (): boolean => {
+	return process.env.ENABLE_MONITORING === 'true';
+};
+
+export const isEnableSwagger = (): boolean => {
+	return process.env.ENABLE_SWAGGER === 'true';
+};
