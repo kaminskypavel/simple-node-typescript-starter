@@ -9,7 +9,8 @@
 <img src="https://user-images.githubusercontent.com/4253088/35522441-07b6e3b8-0525-11e8-856a-9b7b8f9c9c99.png" alt="nodeomn" height="100"/>
 <img src="https://user-images.githubusercontent.com/4253088/35522317-a2b64ee0-0524-11e8-9081-c17084ffaaf5.png" alt="jest" height="100"/>
 <img src="https://user-images.githubusercontent.com/4253088/36342221-c42100aa-1403-11e8-974d-241767bd57a0.png" alt="prettier" height="100"/>
-<img src="https://raw.githubusercontent.com/kucherenko/jscpd/master/assets/logo.svg?sanitize=true" alt="prettier" height="100"/>
+<img src="https://user-images.githubusercontent.com/4253088/63271143-28697080-c2a2-11e9-9a85-cf932aef4768.png" alt="swagger" height="100"/>
+<img src="https://user-images.githubusercontent.com/4253088/63271194-4636d580-c2a2-11e9-9fc8-1457cc31c696.png" alt="jscpd" height="100"/>
 </div>
 
 ## Installation
