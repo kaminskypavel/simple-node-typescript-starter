@@ -40,10 +40,11 @@
         "husky": "^3.0.4",
         "isomorphic-fetch": "^2.2.1",
         "jsend": "^1.1.0",
-        "lodash": "^4.17.13",
+        "lodash": "^4.17.15",
         "mkdirp": "^0.5.1",
         "moment": "^2.22.2",
-        "numeral": "^2.0.6"
+        "numeral": "^2.0.6",
+        "winston": "^3.2.1"
     },
     "devDependencies": {
         "@types/chalk": "^2.2.0",
@@ -54,7 +55,10 @@
         "@types/helmet": "0.0.43",
         "@types/jest": "^24.0.17",
         "@types/jsend": "^1.0.28",
+        "@types/lodash": "^4.14.137",
+        "@types/node": "^12.7.2",
         "@types/supertest": "^2.0.8",
+        "@types/winston": "^2.4.4",
         "@typescript-eslint/eslint-plugin": "^1.13.0",
         "@typescript-eslint/parser": "^1.13.0",
         "cross-env": "^5.2.0",

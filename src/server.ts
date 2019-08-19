@@ -1,11 +1,12 @@
 import app from './app';
 import chalk from 'chalk';
 import dotenv from 'dotenv';
+import logger from './commons/logger';
 
 dotenv.config();
 const port = process.env.PORT;
 app.listen(port, () => {
-	console.log(`simple-node-typescript-starter server is running`);
-	console.log(`navigate to http://localhost:${port}`);
-	console.log(chalk.yellow(`Please remember to rewise security and disable /_monitor route`));
+	logger.info(`simple-node-typescript-starter server is running`);
+	logger.info(`navigate to http://localhost:${port}`);
+	logger.info(chalk.yellow(`Please remember to rewise security and disable /_monitor route`));
 });
