@@ -29,11 +29,12 @@ route to http://localhost:3000/_monitor
 
 <img src="https://user-images.githubusercontent.com/4253088/63249962-3b188100-c273-11e9-98d6-1ea68ab0db79.png" alt="monitor" max-height="500"/>
 
+
 ## Developing
 
 1. `npm install`
 2. `npm run start` (will run a development build with autoreload)
-3. `npm run test:watch` (will run jest)
+3. `npm run test` (will run jest)
 
 ## License
 MIT
