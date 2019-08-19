@@ -3,5 +3,9 @@
     "prettier --config .prettierrc --write",
     "eslint --fix",
     "git add"
+  ],
+  "**/routes/*.ts": [
+    "npm run swagger",
+    "git add swagger.json"
   ]
 }

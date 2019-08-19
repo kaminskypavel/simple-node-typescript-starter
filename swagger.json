@@ -1,0 +1,26 @@
+{
+  "info": {
+    "title": "simple-node-typescript-starter",
+    "version": "1.0.0",
+    "description": "a typescript boilerplate based on best practices and tricks 🦄"
+  },
+  "basePath": "/",
+  "swagger": "2.0",
+  "paths": {
+    "/demo": {
+      "get": {
+        "description": "a demo route",
+        "responses": {
+          "200": {
+            "description": "a demo route"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {},
+  "responses": {},
+  "parameters": {},
+  "securityDefinitions": {},
+  "tags": []
+}
