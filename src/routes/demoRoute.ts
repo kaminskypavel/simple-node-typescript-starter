@@ -6,4 +6,4 @@ router.get('/', async (req, res) => {
 	controller(req, res);
 });
 
-export = router;
+export default router;
