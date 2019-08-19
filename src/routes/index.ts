@@ -19,4 +19,8 @@ export default (app: Express) => {
 	app.get('/', (req, res: Response) => {
 		res.jsend.success('ok');
 	});
+
+	app.use('*', (req, res: Response) => {
+		res.jsend.error('invalid route');
+	});
 };
