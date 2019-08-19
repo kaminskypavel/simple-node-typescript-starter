@@ -16,10 +16,23 @@
 run from command line 
 `git clone --depth=1 https://github.com/kaminskypavel/simple-node-typescript-starter MyProject `
 
+## Features
+
+* [Rate Limit](https://www.npmjs.com/package/express-rate-limit)
+* [JSend](https://www.npmjs.com/package/jsend)
+* [Monitoring](https://www.npmjs.com/package/express-status-monitor)
+
+## Monitoring 
+
+has a built in support for 'express-status-monitor'.
+route to http://localhost:3000/_monitor
+
+<img src="https://user-images.githubusercontent.com/4253088/63249962-3b188100-c273-11e9-98d6-1ea68ab0db79.png" alt="monitor" max-height="500"/>
+
 ## Developing
 
 1. `npm install`
-2. `npm run dev` (will run a development build with autoreload)
+2. `npm run start` (will run a development build with autoreload)
 3. `npm run test:watch` (will run jest)
 
 ## License
