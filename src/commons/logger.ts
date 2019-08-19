@@ -22,7 +22,7 @@ const logger = winston.createLogger({
 	]
 });
 
-if (!isDevelopment()) {
+if (isDevelopment()) {
 	logger.add(
 		new winston.transports.Console({
 			format: format.combine(format.colorize(), simpleFormat)
