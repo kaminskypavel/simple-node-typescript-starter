@@ -1,6 +1,8 @@
 import app from './app';
 import chalk from 'chalk';
+import dotenv from 'dotenv';
 
+dotenv.config();
 const port = process.env.PORT;
 app.listen(port, () => {
 	console.log(`simple-node-typescript-starter server is running`);
