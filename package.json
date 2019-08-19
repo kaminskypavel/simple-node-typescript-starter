@@ -35,6 +35,7 @@
         "express": "^4.16.3",
         "express-rate-limit": "^2.12.1",
         "express-session": "^1.15.6",
+        "express-status-monitor": "^1.2.6",
         "helmet": "^3.20.0",
         "husky": "^3.0.4",
         "isomorphic-fetch": "^2.2.1",
