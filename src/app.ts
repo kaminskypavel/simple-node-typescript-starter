@@ -19,9 +19,8 @@ app.use(cookieParser());
 app.use(jsend.middleware);
 app.use(
 	new RateLimit({
-		windowMs: 15 * 60 * 1000, // 15 min timeframe
-		max: 2000, // max-requests
-		delayMs: 0
+		windowMs: 15 * 60 * 1000,
+		max: 2000
 	})
 );
 
