@@ -5,7 +5,7 @@
         "sourceMap": false,
         "resolveJsonModule": true,
         "module": "commonjs",
-        "lib": ["es2015", "esnext", "dom"],
+        "lib": ["es2015", "esnext"],
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "target": "es6",
