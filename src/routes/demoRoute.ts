@@ -22,7 +22,7 @@ router.get(
 	[
 		query('name')
 			.exists()
-			.withMessage('misisng a name field')
+			.withMessage('missing a name field')
 			.isLength({min: 3})
 			.withMessage('must be at least 3 chars long')
 	],
