@@ -4,6 +4,8 @@ import logger from '../commons/logger';
 import {isEnableMonitoring, isEnableSwagger} from '../commons/env';
 import swaggerDocument from './../../swagger.json';
 import swaggerUi from 'swagger-ui-express';
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const statusMonitor = require('express-status-monitor')();
 
 export default (app: Express) => {
