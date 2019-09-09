@@ -37,7 +37,7 @@
     "dotenv": "^8.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "express-rate-limit": "^2.12.1",
+    "express-rate-limit": "^5.0.0",
     "express-session": "^1.15.6",
     "express-status-monitor": "^1.2.6",
     "express-validator": "^6.1.1",
