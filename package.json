@@ -87,7 +87,7 @@
     "swagger-jsdoc": "3.4.0",
     "swagger-ui-express": "4.1.0",
     "ts-jest": "24.1.0",
-    "ts-node-dev": "1.0.0-pre.42",
+    "ts-node-dev": "1.0.0-pre.43",
     "typescript": "3.6.3"
   },
   "husky": {
