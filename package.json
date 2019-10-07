@@ -80,7 +80,7 @@
     "jest": "24.9.0",
     "js-green-licenses": "1.1.0",
     "jscpd": "2.0.16",
-    "lint-staged": "9.4.0",
+    "lint-staged": "9.4.1",
     "prettier": "1.18.2",
     "setup-polly-jest": "0.6.0",
     "supertest": "4.0.2",
