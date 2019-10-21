@@ -62,7 +62,7 @@
     "@types/jest": "24.0.17",
     "@types/jsend": "1.0.28",
     "@types/lodash": "4.14.144",
-    "@types/node": "12.7.12",
+    "@types/node": "12.11.1",
     "@types/supertest": "2.0.8",
     "@types/swagger-ui-express": "3.0.1",
     "@types/winston": "2.4.4",
