@@ -81,7 +81,7 @@
     "js-green-licenses": "1.1.0",
     "jscpd": "2.0.16",
     "lint-staged": "9.4.2",
-    "prettier": "1.18.2",
+    "prettier": "1.19.1",
     "setup-polly-jest": "0.6.0",
     "supertest": "4.0.2",
     "swagger-jsdoc": "3.4.0",
