@@ -42,7 +42,7 @@
     "express-status-monitor": "^1.2.6",
     "express-validator": "^6.1.1",
     "helmet": "^3.20.0",
-    "husky": "^3.0.4",
+    "husky": "^4.0.0",
     "isomorphic-fetch": "^2.2.1",
     "jsend": "^1.1.0",
     "lodash": "^4.17.15",
