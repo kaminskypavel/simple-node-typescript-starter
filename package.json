@@ -63,7 +63,7 @@
     "@types/jsend": "1.0.28",
     "@types/lodash": "4.14.159",
     "@types/node": "12.12.26",
-    "@types/supertest": "2.0.8",
+    "@types/supertest": "2.0.10",
     "@types/swagger-ui-express": "4.1.1",
     "@types/winston": "2.4.4",
     "@typescript-eslint/eslint-plugin": "2.18.0",
