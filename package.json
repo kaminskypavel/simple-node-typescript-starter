@@ -41,7 +41,7 @@
     "express-session": "^1.15.6",
     "express-status-monitor": "^1.2.6",
     "express-validator": "^6.1.1",
-    "helmet": "^3.20.0",
+    "helmet": "^4.0.0",
     "husky": "^4.0.0",
     "isomorphic-fetch": "^2.2.1",
     "jsend": "^1.1.0",
