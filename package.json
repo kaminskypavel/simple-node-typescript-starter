@@ -36,7 +36,7 @@
     "cors": "^2.8.4",
     "dotenv": "^8.0.0",
     "ejs": "^3.0.0",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "express-rate-limit": "^5.0.0",
     "express-session": "^1.15.6",
     "express-status-monitor": "^1.2.6",
